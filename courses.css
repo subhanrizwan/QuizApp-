@@ -1,0 +1,150 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+display: flex;
+}
+.main-container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
+    display: none;
+}
+.header {
+    flex: 1;
+    background-color: #54C7C3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 15%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-child {
+    width: 100%;
+    height: 100%;
+    background-size: 40% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.logo-child > img {
+    width: 50%;
+    height: 60%;
+}
+.beta-div {
+    width: 13%;
+    height: 80%;
+    align-items: center;
+    display: flex;
+}
+.beta-div span {
+    color: #fff;
+}
+#main-box {
+    width: 100%;
+    height: 100%;
+}
+.text-heading {
+    text-align: center;
+    color: #54C7C3;
+}
+.text-heading h1 {
+    font-weight: lighter;
+    font-size: 50pt;
+    line-height: 110px;
+}
+.cont {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cont_child {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.courses {
+    width: 180px;
+    height:170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.courses > img {
+    width:90%;
+    height: 105%;
+}
+@media(max-width:320px){
+    .text-heading > h1{
+        font-size: 40pt;
+    }
+    .beta-div{
+        margin-right: 7px;
+    }
+}
+
+#quiz-app {
+    display: none;
+    width: 45%;
+    height: 75%;
+}
+
+#loader3{
+    margin: auto ;
+  }
+@media(max-width:320px){
+    .logo {
+        width: 40%;
+        height: 70px;
+    }
+    .text-heading h1{
+        font-size: 30pt;
+    }
+  
+}
+/* @media(max-width:375px){
+    .logo {
+        position: relative;
+        left: -23px; 
+        width: 37%;
+        height: 65px;
+    }
+    .text-heading h1{
+        font-size: 30pt;
+    }
+  
+} */
+@media(max-width:425px){
+    .logo {
+        width: 34%;
+        position: relative;
+        left: -17px;
+    }
+    .text-heading h1{
+        font-size: 36pt;
+    }
+  
+}
+/* @media(max-width:768px){
+    .logo{
+        width: 27%;
+        position: relative;
+        left: -20px;
+    }
+  
+    .text-heading h1{
+        font-size: 36pt;
+    }
+  
+} */
+
