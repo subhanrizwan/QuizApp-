@@ -5,9 +5,10 @@ setTimeout(()=>{
   let mainCont = document.getElementById('mainCont4')
   mainCont.style.display = 'block'
   },1000)
-function javascript() {
-  window.location = 'quizQues.html'
-}
+
+// function javascript() {
+//   window.location = 'quizQues.html'
+// }
   
 
 let Questions = [
@@ -94,11 +95,7 @@ let Questions = [
 
 ]
 
-// min = 0;
-// let mSec = 0;
-// console.log(sec);
-// let minHeading = document.getElementById('min')
-// let mSecHeading = document.getElementById('miliSec')
+
 let totalTime = 30
 let sec = totalTime
 let secHeading = document.getElementById('sec')
@@ -185,9 +182,7 @@ function Submitbtn(){
       return checkAns;
     }
   
-    // function clearTime(){
-    //   clearInterval(Timer)
-    // }
+   
     function reset(){
       options.forEach((input) =>{
         if(input){
@@ -201,9 +196,9 @@ function Submitbtn(){
  
       secHeading.innerHTML = sec
       sec--;
-      // mSec = 0
+      
       if(sec == 0){
-        // clearInterval(Timer)
+    
         setTimeout(()=>{
   
           wrong++;
@@ -246,21 +241,7 @@ function Submitbtn(){
         let RestartBtn=document.getElementById('RestartBtn')
         RestartBtn.style.backgroundColor = 'rgb(236, 236, 236)'
         window.location = 'quizQues.html'
-//  if(QuestCount === total){
-//   return endQuiz();
-//   }
-//   // sec = 0
-//   clearInterval(Timer)
-//   Start();
-//   let QuestList = Questions[QuestCount]
-//   Quest.innerHTML =`Q${QuestCount+1})${QuestList.ques}`
 
-//   // console.log(options);
-//   options[0].nextElementSibling.innerHTML = QuestList.a
-//   options[1].nextElementSibling.innerHTML = QuestList.b
-//   options[2].nextElementSibling.innerHTML = QuestList.c
-//   options[3].nextElementSibling.innerHTML = QuestList.d
-    // })
     }
     
     function BackHome(){

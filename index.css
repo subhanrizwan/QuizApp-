@@ -3,6 +3,9 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
     background-color: rgb(255, 255, 255);
 display: flex;
 }
@@ -10,7 +13,6 @@ display: flex;
     display: flex;
     flex: 1;
     flex-direction: column;
-    /* display: none; */
 }
 .header{
 flex: 0.1;
@@ -22,7 +24,6 @@ align-items: center;
 .logo{
     width: 15%;
     height: 90px;
-    /* border: 1px solid yellow; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,27 +65,11 @@ margin-top: 50px; }
 .d-flex {
     display: flex!important;
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
 *, :after, :before {
     box-sizing: border-box;
 }
 div {
     display: block;
-}
-
-body {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
 }
 .main-heading>h1, .main-text {
     line-height: 1.2;
@@ -177,22 +162,18 @@ h1 {
         height: 90px;
         position: relative;
         right: 25px;
-        /* border: 1px solid yellow; */
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
    .beta-div span{
     position: relative;
     right: 60%;
-    /* font-size:la;   */
    }
    .cont-btn{
     width: 23%;
     height: 55px;
     position: relative;
-    /* top: -3px; */
    }
   }
 @media only screen and (max-width: 768px) {
@@ -314,13 +295,21 @@ h1 {
         font-size:7.9px;
     }
   }
-/* 
-  #loader1{
-    width: 8%;
-    height: 16.5%;
+  #loader{
     margin: auto;
-  } */
-
+  }
+#gbtn{
+    width: 30px;
+    animation: rot 3s infinite linear;
+}
+@keyframes rot{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
  
  

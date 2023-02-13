@@ -1,6 +1,6 @@
 // setTimeout(()=>{
-// let loader1 = document.getElementById('loader1')
-// loader1.style.display = 'none'
+// let loader = document.getElementById('loader')
+// loader.style.display = 'none'
 
 // let mainCont = document.getElementById('mainCont')
 // mainCont.style.display = 'block'
